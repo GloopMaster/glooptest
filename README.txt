@@ -8,6 +8,8 @@ More (or possibly (most likely) less) imformation can be found here: http://mine
 
 --==--==--
 
+Biome Module: Adds a selection of biomes. This module NEEDS mapgen v7.
+
 Ore Module: Adds a variety of ores into minetest, for use here and possibly in other mods.
 
 OtherGen Module: Adds generation aside from ores.

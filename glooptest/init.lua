@@ -3,7 +3,7 @@
 --
 -- GloopTest random data:
 --    Version                             : 0.0.4a
---    Current module amount               : 6
+--    Current module amount               : 7
 --    Current compatible minetest version : 0.4.7
 --    License                             : CC-BY-SA
 --    Totals: lol I don't know
