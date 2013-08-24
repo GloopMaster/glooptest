@@ -3,7 +3,7 @@ glooptest.debug("MESSAGE","Loading Tools Module Now!")
 
 dofile(minetest.get_modpath("glooptest").."/tools_module/api.lua")
 
-glooptest.tools_module.register_tools("glooptest", "wood", "Wooden", "default:wood", {
+glooptest.tools_module.register_tools("glooptest", "wood", "Wooden", "group:wood", {
 	handsaw = {
 		makes = true,
 		texture = "glooptest_tool_woodhandsaw.png",

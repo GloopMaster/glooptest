@@ -3,7 +3,7 @@
 --
 -- GloopTest random data:
 --    Version                             : 0.0.4a
---    Current module amount               : 7
+--    Current module amount               : 6
 --    Current compatible minetest version : 0.4.7
 --    License                             : CC-BY-SA
 --    Totals: lol I don't know
@@ -40,20 +40,14 @@ if LOAD_PARTS_MODULE == true then
 	modules_loaded = modulecount+1
 end
 
-if LOAD_TABLE_MODULE == true then
-	dofile(minetest.get_modpath("glooptest").."/table_module/init.lua")
+if LOAD_TECH_MODULE == true then
+	dofile(minetest.get_modpath("glooptest").."/tech_module/init.lua")
 	local modulecount = modules_loaded
 	modules_loaded = modulecount+1
 end
 
 if LOAD_OTHERGEN_MODULE == true then
 	dofile(minetest.get_modpath("glooptest").."/othergen_module/init.lua")
-	local modulecount = modules_loaded
-	modules_loaded = modulecount+1
-end
-
-if LOAD_BIOME_MODULE == true then
-	dofile(minetest.get_modpath("glooptest").."/biome_module/init.lua")
 	local modulecount = modules_loaded
 	modules_loaded = modulecount+1
 end

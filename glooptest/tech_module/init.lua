@@ -1,7 +1,7 @@
-glooptest.table_module = {}
-glooptest.debug("MESSAGE","Loading Table Module Now!")
+glooptest.tech_module = {}
+glooptest.debug("MESSAGE","Loading Tech Module Now!")
 
---dofile(minetest.get_modpath("glooptest").."/table_module/api.lua")
+--dofile(minetest.get_modpath("glooptest").."/tech_module/api.lua")
 
 local fixed = {
     { -8/16, -8/16, -8/16, 8/16, -4/16, 8/16 }, -- base
@@ -13,13 +13,13 @@ local fixed = {
 }
 
 -- {used item, produced node}
-glooptest.table_module.table_changers = {
+glooptest.tech_module.table_changers = {
 	{},
 }
 
-function glooptest.table_module.register_table(used_item, produced_node)
+function glooptest.tech_module.register_table(used_item, produced_node)
 	if minetest.registered_items[used_item] ~= nil and minetest.registered_items[produced_node] ~= nil then
-		table.insert(glooptest.table_module.table_changers, {used_item, produced_node})
+		table.insert(glooptest.tech_module.table_changers, {item = used_item, node = produced_node})
 	end
 end
 
@@ -34,6 +34,17 @@ minetest.register_node("glooptest:wooden_table", {
         type = "fixed",
         fixed = fixed,
     },
+	--[[
+	on_rightclick = function(pos, node, clicker, itemstack)
+		local clicking_item = itemstack
+		for ind,content in glooptest.tech_module.table_changers do
+			if content.item == clicking_item:get_name() then
+				minetest.place_node(pos, {name=content.node})
+				return ItemStack(clicking_item:get_name().." "..tostring(clicking_item:get_count()-1))
+			end
+		end
+	end,
+	--]]
 })
 
 minetest.register_craft({
@@ -53,9 +64,9 @@ minetest.register_craftitem("glooptest:upgrade_core", {
 minetest.register_craft({
 	output = "glooptest:upgrade_core",
 	recipe = {
-		{"", "glooptest:akalin_ingot", ""},
-		{"glooptest:akalin_ingot", "default:mese_crystal_fragment", "glooptest:akalin_ingot"},
-		{"", "glooptest:akalin_ingot", ""},
+		{"glooptest:akalin_ingot", "glooptest:crystal_glass", "glooptest:akalin_ingot"},
+		{"glooptest:crystal_glass", "default:mese_crystal_fragment", "glooptest:crystal_glass"},
+		{"glooptest:akalin_ingot", "glooptest:crystal_glass", "glooptest:akalin_ingot"},
 	},
 })
 

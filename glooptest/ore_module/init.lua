@@ -7,6 +7,7 @@ dofile(minetest.get_modpath("glooptest").."/ore_module/api.lua")
 
 -- HUGE NOTE HERE:
 -- I did not make the textures. celeron55/erlehmann made the textures which were licensed under CC-BY-SA, and then edited by me.
+-- The textures for non-gem ores are thus CC-BY-SA, with respect to celeron55/erlehmann
 -- Suck it, minetest community.
 
 glooptest.ore_module.register_ore("glooptest", "kalite", "Kalite", {
@@ -87,7 +88,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "gloopores:kalite_lump",
+	recipe = "glooptest:kalite_lump",
 	burntime = 30,
 })
 
