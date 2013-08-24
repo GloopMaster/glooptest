@@ -308,7 +308,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 		caps = {
 			sword = {
 				full_punch_interval = 0.5,
-				max_drop_level = 0,
+				max_drop_level = 2,
 				groupcaps = {
 					fleshy = {times={[2]=1.00, [3]=0.80}, uses=300, maxlevel=1},
 					snappy = {times={[2]=1.00, [3]=0.80}, uses=300, maxlevel=1},
@@ -318,7 +318,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 			},
 			axe = {
 				full_punch_interval = 0.5,
-				max_drop_level = 0,
+				max_drop_level = 2,
 				groupcaps = {
 					choppy = {times={[1]=3.00, [2]=1.00, [3]=0.70}, uses=300, maxlevel=1},
 					fleshy = {times={[2]=1.30, [3]=0.70}, uses=300, maxlevel=1}
@@ -327,7 +327,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 			},
 			pick = {
 				full_punch_interval = 0.5,
-				max_drop_level = 0,
+				max_drop_level = 2,
 				groupcaps = {
 					cracky = {times={[1]=3.00, [2]=1.20, [3]=0.80}, uses=300, maxlevel=1}
 				},
@@ -335,7 +335,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 			},
 			shovel = {
 				full_punch_interval = 0.5,
-				max_drop_level = 0,
+				max_drop_level = 2,
 				groupcaps = {
 					crumbly = {times={[1]=1.50, [2]=0.75, [3]=0.45}, uses=300, maxlevel=1}
 				},
