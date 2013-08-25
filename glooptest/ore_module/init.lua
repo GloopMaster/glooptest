@@ -310,9 +310,9 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 				full_punch_interval = 0.5,
 				max_drop_level = 2,
 				groupcaps = {
-					fleshy = {times={[2]=1.00, [3]=0.80}, uses=300, maxlevel=1},
-					snappy = {times={[2]=1.00, [3]=0.80}, uses=300, maxlevel=1},
-					choppy = {times={[3]=1.20}, uses=300, maxlevel=0}
+					fleshy = {times={[2]=1.30, [3]=1.10}, uses=300, maxlevel=2},
+					snappy = {times={[2]=1.30, [3]=1.10}, uses=300, maxlevel=2},
+					choppy = {times={[3]=1.60}, uses=300, maxlevel=1}
 				},
 				damage_groups = {fleshy=6},
 			},
@@ -320,8 +320,8 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 				full_punch_interval = 0.5,
 				max_drop_level = 2,
 				groupcaps = {
-					choppy = {times={[1]=3.00, [2]=1.00, [3]=0.70}, uses=300, maxlevel=1},
-					fleshy = {times={[2]=1.30, [3]=0.70}, uses=300, maxlevel=1}
+					choppy = {times={[1]=3.30, [2]=1.30, [3]=1.00}, uses=300, maxlevel=2},
+					fleshy = {times={[2]=1.60, [3]=1.00}, uses=300, maxlevel=2}
 				},
 				damage_groups = {fleshy=3},
 			},
@@ -329,7 +329,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 				full_punch_interval = 0.5,
 				max_drop_level = 2,
 				groupcaps = {
-					cracky = {times={[1]=3.00, [2]=1.20, [3]=0.80}, uses=300, maxlevel=1}
+					cracky = {times={[1]=3.60, [2]=1.90, [3]=1.40}, uses=300, maxlevel=2}
 				},
 				damage_groups = {fleshy=3},
 			},
@@ -337,7 +337,7 @@ glooptest.ore_module.register_ore("glooptest", "arol", "Arol", {
 				full_punch_interval = 0.5,
 				max_drop_level = 2,
 				groupcaps = {
-					crumbly = {times={[1]=1.50, [2]=0.75, [3]=0.45}, uses=300, maxlevel=1}
+					crumbly = {times={[1]=2.70, [2]=1.45, [3]=0.85}, uses=300, maxlevel=2}
 				},
 				damage_groups = {fleshy=3},
 			}
