@@ -408,12 +408,33 @@ glooptest.ore_module.register_ore("glooptest", "ruby", "Ruby", {
 			maxy = -30
 		},
 	},
+	block = {
+		makes = true,
+		texture = "glooptest_ruby_block.png",
+		groups = {bendy=3,cracky=2,level=1},
+		sounds = stone_sounds,
+		fromingots = false
+	}
 })
 
 minetest.register_craftitem("glooptest:ruby_gem", {
 	description = "Ruby",
 	inventory_image = "glooptest_gem_ruby.png",
 	groups = {glooptest_gem=1},
+})
+minetest.register_craft({
+	output = "glooptest:rubyblock",
+	recipe = {
+		{"glooptest:ruby_gem", "glooptest:ruby_gem", "glooptest:ruby_gem"},
+		{"glooptest:ruby_gem", "glooptest:ruby_gem", "glooptest:ruby_gem"},
+		{"glooptest:ruby_gem", "glooptest:ruby_gem", "glooptest:ruby_gem"}
+	}
+})
+minetest.register_craft({
+	output = "glooptest:ruby_gem 9",
+	recipe = {
+		{"glooptest:rubyblock"}
+	}
 })
 
 glooptest.ore_module.register_ore("glooptest", "sapphire", "Sapphire", {
@@ -435,12 +456,33 @@ glooptest.ore_module.register_ore("glooptest", "sapphire", "Sapphire", {
 			maxy = -30
 		},
 	},
+	block = {
+		makes = true,
+		texture = "glooptest_sapphire_block.png",
+		groups = {bendy=3,cracky=2,level=1},
+		sounds = stone_sounds,
+		fromingots = false
+	}
 })
 
 minetest.register_craftitem("glooptest:sapphire_gem", {
 	description = "Sapphire",
 	inventory_image = "glooptest_gem_sapphire.png",
 	groups = {glooptest_gem=1},
+})
+minetest.register_craft({
+	output = "glooptest:sapphireblock",
+	recipe = {
+		{"glooptest:sapphire_gem", "glooptest:sapphire_gem", "glooptest:sapphire_gem"},
+		{"glooptest:sapphire_gem", "glooptest:sapphire_gem", "glooptest:sapphire_gem"},
+		{"glooptest:sapphire_gem", "glooptest:sapphire_gem", "glooptest:sapphire_gem"}
+	}
+})
+minetest.register_craft({
+	output = "glooptest:emerald_gem 9",
+	recipe = {
+		{"glooptest:sapphireblock"}
+	}
 })
 
 glooptest.ore_module.register_ore("glooptest", "emerald", "Emerald", {
@@ -462,12 +504,33 @@ glooptest.ore_module.register_ore("glooptest", "emerald", "Emerald", {
 			maxy = -70
 		},
 	},
+	block = {
+		makes = true,
+		texture = "glooptest_emerald_block.png",
+		groups = {bendy=3,cracky=2,level=1},
+		sounds = stone_sounds,
+		fromingots = false
+	}
 })
 
 minetest.register_craftitem("glooptest:emerald_gem", {
 	description = "Emerald",
 	inventory_image = "glooptest_gem_emerald.png",
 	groups = {glooptest_gem=1},
+})
+minetest.register_craft({
+	output = "glooptest:emeraldblock",
+	recipe = {
+		{"glooptest:emerald_gem", "glooptest:emerald_gem", "glooptest:emerald_gem"},
+		{"glooptest:emerald_gem", "glooptest:emerald_gem", "glooptest:emerald_gem"},
+		{"glooptest:emerald_gem", "glooptest:emerald_gem", "glooptest:emerald_gem"}
+	}
+})
+minetest.register_craft({
+	output = "glooptest:emerald_gem 9",
+	recipe = {
+		{"glooptest:emeraldblock"}
+	}
 })
 
 glooptest.ore_module.register_ore("glooptest", "topaz", "Topaz", {
@@ -489,12 +552,33 @@ glooptest.ore_module.register_ore("glooptest", "topaz", "Topaz", {
 			maxy = -70
 		},
 	},
+	block = {
+		makes = true,
+		texture = "glooptest_topaz_block.png",
+		groups = {bendy=3,cracky=2,level=1},
+		sounds = stone_sounds,
+		fromingots = false
+	}
 })
 
 minetest.register_craftitem("glooptest:topaz_gem", {
 	description = "Topaz",
 	inventory_image = "glooptest_gem_topaz.png",
 	groups = {glooptest_gem=1},
+})
+minetest.register_craft({
+	output = "glooptest:topazblock",
+	recipe = {
+		{"glooptest:topaz_gem", "glooptest:topaz_gem", "glooptest:topaz_gem"},
+		{"glooptest:topaz_gem", "glooptest:topaz_gem", "glooptest:topaz_gem"},
+		{"glooptest:topaz_gem", "glooptest:topaz_gem", "glooptest:topaz_gem"}
+	}
+})
+minetest.register_craft({
+	output = "glooptest:topaz_gem 9",
+	recipe = {
+		{"glooptest:topazblock"}
+	}
 })
 
 glooptest.ore_module.register_ore("glooptest", "amethyst", "Amethyst", {
@@ -516,10 +600,31 @@ glooptest.ore_module.register_ore("glooptest", "amethyst", "Amethyst", {
 			maxy = -128
 		},
 	},
+	block = {
+		makes = true,
+		texture = "glooptest_amethyst_block.png",
+		groups = {bendy=3,cracky=2,level=1},
+		sounds = stone_sounds,
+		fromingots = false
+	}
 })
 
 minetest.register_craftitem("glooptest:amethyst_gem", {
 	description = "Amethyst",
 	inventory_image = "glooptest_gem_amethyst.png",
 	groups = {glooptest_gem=1},
+})
+minetest.register_craft({
+	output = "glooptest:amethystblock",
+	recipe = {
+		{"glooptest:amethyst_gem", "glooptest:amethyst_gem", "glooptest:amethyst_gem"},
+		{"glooptest:amethyst_gem", "glooptest:amethyst_gem", "glooptest:amethyst_gem"},
+		{"glooptest:amethyst_gem", "glooptest:amethyst_gem", "glooptest:amethyst_gem"}
+	}
+})
+minetest.register_craft({
+	output = "glooptest:amethyst_gem 9",
+	recipe = {
+		{"glooptest:amethystblock"}
+	}
 })
