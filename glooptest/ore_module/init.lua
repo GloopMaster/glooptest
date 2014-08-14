@@ -479,7 +479,7 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = "glooptest:emerald_gem 9",
+	output = "glooptest:sapphire_gem 9",
 	recipe = {
 		{"glooptest:sapphireblock"}
 	}
