@@ -91,8 +91,8 @@ function glooptest.ore_module.register_ore(modname, name, desc, uses)
 			clust_scarcity = uses.ore.generate.chunks_per_mapblock,
 			clust_num_ores = uses.ore.generate.max_blocks_per_chunk,
 			clust_size     = uses.ore.generate.chunk_size,
-			height_min     = uses.ore.generate.miny,
-			height_max     = uses.ore.generate.maxy,
+			y_min     = uses.ore.generate.miny,
+			y_max     = uses.ore.generate.maxy,
 		})
 	end
 	if uses.lump ~= nil and uses.lump.makes ~= false then
